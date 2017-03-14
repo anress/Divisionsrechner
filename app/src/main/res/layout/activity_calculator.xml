@@ -6,41 +6,86 @@
     android:layout_height="match_parent"
     tools:context="com.example.anja.aufgabe1_se2.Calculator">
 
-    <EditText
-        android:id="@+id/header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Divisionsrechner"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="75dp" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="216dp"
         android:layout_height="56dp"
+        android:backgroundTint="#456F9A"
         android:text="Dividiere"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="97dp"
         tools:layout_editor_absoluteY="377dp" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/input1"
         android:layout_width="131dp"
         android:layout_height="51dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Dividend"
-        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteX="187dp"
         tools:layout_editor_absoluteY="177dp" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/input2"
         android:layout_width="131dp"
         android:layout_height="51dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Divisor"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="276dp" />
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:text="Divisionsrechner"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#345F9A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <TextView
+        android:id="@+id/divisor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divisor:"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <TextView
+        android:id="@+id/dividend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dividend:"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Output:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="478dp" />
+
+    <TextView
+        android:id="@+id/outputField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="478dp" />
+
 </android.support.constraint.ConstraintLayout>
