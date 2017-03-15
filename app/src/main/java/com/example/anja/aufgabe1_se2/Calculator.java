@@ -34,12 +34,17 @@ public class Calculator extends AppCompatActivity {
             mInput2.setError("Darf nicht leer sein");
             return;
         }
+
+        if(Double.parseDouble(mInput2.getText().toString())==0){
+            mInput2.setError(("Division durch 0 nicht möglich"));
+            return;
+        }
         double divisor =  Double.parseDouble(mInput2.getText().toString());
         mInput2.setError(null);
 
-        double result = divident / divisor; // TODO: secure this
+        double result = divident / divisor;
 
         TextView resultLabel = (TextView) findViewById(R.id.outputField);
-        resultLabel.setText(String.valueOf(result)); // TODO: make more pretty
+        resultLabel.setText(String.valueOf(result));
     }
 }
